@@ -53,22 +53,22 @@ section.contactos{
        }
     }
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 420px){
     section.contactos{
         h1.tituloContactanos{
         height: 50px;
         font-size: 20px;
         margin-top: 30px;
-        margin-left:70px;
+        margin-left:10px;
        }
        form{
         margin-top: 20px;
-        margin-left:70px;
+        margin-left:10px;
         button.botonDeFormulario{
         margin-top: 25px;}
        }
        img.contactanos{
-        width: 250px;
+        width: 200px;
         grid-area: imgC;
          margin-left: 50px;
         margin-top: 50px;

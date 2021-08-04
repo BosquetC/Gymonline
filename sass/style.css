@@ -55,20 +55,20 @@ section .segundoParrafo {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   section h1.tituloQuienesSomos {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   section p.segundoParrafo {
     font-size: 16px;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: -20px;
     width: 300px;
     height: 200px;
   }
   section img.imagenQuienesSomos {
-    width: 250px;
+    width: 200px;
     margin-left: 50px;
     margin-top: 120px;
   }
@@ -152,10 +152,10 @@ article.servicios div.planesCajas button {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   h1.tituloServicios {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 10px;
     font-size: 20px;
   }
   article.servicios {
@@ -163,7 +163,7 @@ article.servicios div.planesCajas button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   article.servicios div.planesCajas {
     background-color: #c9c9c9;
@@ -206,14 +206,14 @@ section article.carsEntrenadores {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   section h1.tituloEntrenadores {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 10px;
     font-size: 20px;
   }
   section article.carsEntrenadores {
-    margin-left: 35px;
+    margin-left: 3px;
   }
 }
 
@@ -295,22 +295,22 @@ section.contactos label {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   section.contactos h1.tituloContactanos {
     height: 50px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 10px;
   }
   section.contactos form {
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 10px;
   }
   section.contactos form button.botonDeFormulario {
     margin-top: 25px;
   }
   section.contactos img.contactanos {
-    width: 250px;
+    width: 200px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
@@ -492,7 +492,7 @@ section.contactos label {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   * body header button.menuHamburguesa {
     width: 50px;
     height: 30px;

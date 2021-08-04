@@ -66,15 +66,15 @@
             }
     
 }  
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 420px){
     h1.tituloServicios{
         margin-top: 50px;
-        margin-left: 50px;
+        margin-left: 10px;
         font-size: 20px;
     }
     article.servicios{
      flex-direction: column;
-     margin-left: 50px;
+     margin-left: 10px;
         div.planesCajas{
                 background-color: rgb(201, 201, 201);
                 @include tamaño(300px,550px);
