@@ -1,0 +1,77 @@
+section.contactos{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "imgC h1C"
+                         "imgC formC";
+        img.contactanos{
+        width: 400px;
+        grid-area: imgC;
+         margin-left: 150px;
+        margin-top: 50px;
+        }       
+        h1.tituloContactanos{
+        display: inline-block;
+        grid-area: h1C;
+        margin-top: 50px;
+        }
+        form{
+        width: 50%;
+        grid-area: formC;
+        margin-top: -190px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+              button.botonDeFormulario{
+                  width: 80px;
+                  background-color: $colorPrimario;
+                  font-family: $fuenteParrafos;
+                  color: $colorSecundario;
+                  border-radius: 5px;
+              }
+        }       
+        label{
+        display: block;
+}
+}
+@media only screen and (max-width: 768px){
+    section.contactos{
+        grid-template-columns:100%;
+        grid-template-rows: 5% 40% 100%;
+        grid-template-areas: "h1C" "formC" "imgC";
+
+        form{
+        margin-top: 60px;
+        margin-left: 110px;
+       }
+       h1.tituloContactanos{
+        height: 50px;
+        margin-top: 50px;
+        margin-left: 100px;
+
+       }
+    }
+}
+@media only screen and (max-width: 380px){
+    section.contactos{
+        h1.tituloContactanos{
+        height: 50px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left:70px;
+       }
+       form{
+        margin-top: 20px;
+        margin-left:70px;
+        button.botonDeFormulario{
+        margin-top: 25px;}
+       }
+       img.contactanos{
+        width: 250px;
+        grid-area: imgC;
+         margin-left: 50px;
+        margin-top: 50px;
+        }       
+    }
+}

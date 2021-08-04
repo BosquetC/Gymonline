@@ -1,0 +1,69 @@
+section{
+    article.segundoArticulo{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "imgQS h1QS"
+                             "imgQS pQS ";}
+    .quienesSomos{
+        display: inline;
+    }
+    .imagenQuienesSomos{
+        width: 400px;
+        grid-area: imgQS ;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .tituloQuienesSomos{
+        grid-area: h1QS;
+        margin-top: 250px;
+        margin-left: 30px;
+    }
+    .segundoParrafo{
+        grid-area: pQS;
+        width: 500px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 768px){
+section{
+    article.segundoArticulo{
+        grid-template-columns:200%;
+    grid-template-rows: 15% 10% 100%;
+    grid-template-areas: "h1QS"
+                         "pQS"
+                         "imgQS "
+    }
+    h1.tituloQuienesSomos{
+        margin-top: 40px;
+        margin-left: 90px;
+    
+        
+        
+    }
+    p.segundoParrafo{
+        margin-left: 90px; 
+    }
+}
+}
+@media only screen and (max-width: 380px) {
+    section{
+        h1.tituloQuienesSomos{
+        font-size: 20px;
+        margin-left: 50px;
+        }
+        p.segundoParrafo{
+        font-size: 16px;
+        margin-left: 50px;
+        margin-top: -20px;
+        @include tamaño(300px,200px);
+        }
+    
+        img.imagenQuienesSomos{
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 120px;
+        }
+
+    }
+}

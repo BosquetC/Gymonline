@@ -1,0 +1,178 @@
+$colorPrimario: #CAF7E3;
+$colorSecundario:#053742;
+$fuenteTitulos: 'Lato', sans-serif;
+$fuenteParrafos: 'Roboto', sans-serif;
+@mixin tamaño ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@import"quienesSomos";
+@import"servicios";
+@import"entrenadores";
+@import"contactanos";
+
+*{
+    margin: 0;
+    padding: 0;
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    header{ background-color:$colorPrimario;
+        @include tamaño(100%,120px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        .menuHamburguesa{
+            display: none;
+        }
+        nav{
+            margin-left: 200px;
+            li{
+            display:inline-block;
+                a{  color: $colorSecundario;
+                text-decoration: none;
+                padding: 10px;
+                font-family:$fuenteParrafos;
+                font-weight: 700;
+                font-size: 11px;
+                }
+                a:hover{
+                color: purple
+                }
+                a:active{
+                color: whitesmoke ;
+                }
+           }   }
+    }
+section{
+    h1{color: $colorSecundario;
+    font-family:'Lato', sans-serif;
+    font-size: 35px; 
+    }
+    article>p{
+    display:inline-block;
+    font-family:$fuenteParrafos;
+    margin-left:100px;
+    width: 500px;
+    }
+    article.primerArticulo{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "h11 img1"
+                         "p1 img1"
+    }
+    .tituloDeBienvenida{
+    grid-area: h11;
+    margin-top: 250px;
+    margin-left: 100px;
+    }
+    .imagenPortada{
+    width: 400px;  
+    margin-left: 100px;
+    margin-top: 50px;
+    grid-area: img1;
+    }
+
+}
+footer{
+    background-color: $colorPrimario;
+    @include tamaño(100%,100px);
+    div.redes{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .redes>a{
+        margin-left: 10px;
+        font-size: 30px;
+        color: $colorSecundario ;
+    }
+    p{
+        color: $colorSecundario ;
+        font-family: $fuenteTitulos;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    header{
+            button.menuHamburguesa{
+            display: inline-block;
+            @include tamaño(80px,40px);
+            margin-left: 10%;
+            border-radius: 7px;
+            margin-top: 10px;
+            background-color: $colorPrimario;
+            }
+            img.logo{
+                margin-left: 30px;
+            }
+            nav{
+             visibility: hidden;
+            }
+    }
+    section{
+            article.primerArticulo{
+            grid-template-columns: 200%;
+            grid-template-rows: 15% 10% 100%;
+            grid-template-areas: "h11 "
+                                 "p1 "
+                                 "img1"
+            }
+            h1.tituloDeBienvenida{
+            margin-top: 40px;
+    
+            }
+            p.primerParrafo{
+                @include tamaño(500px,100px);
+
+             }
+            img.imagenPortada{
+            margin-top: 80px;
+            }
+          
+        }
+    }
+    @media only screen and (max-width: 380px){
+        header{
+            button.menuHamburguesa{
+                @include tamaño(50px,30px);
+            }
+            img.logo{
+                width: 120px;
+            }
+            }
+            section{
+                h1.tituloDeBienvenida{
+                font-size: 20px;
+                margin-left: 50px;
+                }
+            p.primerParrafo{
+                font-size: 16px;
+                margin-left: 50px;
+                margin-top: -20px;
+                @include tamaño(300px,200px);
+            }
+            
+            img.imagenPortada{
+                width: 250px;
+            margin-left: 50px;
+            margin-top: 120px;
+            }
+
+        }
+        footer{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+}

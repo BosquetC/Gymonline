@@ -1,0 +1,99 @@
+
+
+
+    h1.tituloServicios{
+    margin-top:20px;
+    margin-left: 45%;
+    font-family: $fuenteTitulos;
+    font-size: 35px;
+    }
+    article.servicios{
+    display: flex;
+    justify-content: space-evenly;
+
+        div.planesCajas{
+        background-color: rgb(201, 201, 201);
+        @include tamaño(400px,500px);
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+        box-shadow: -5px 5px 10px;
+        }
+        div.planesCajas:hover{
+            transform: scale(1.1, 1.1);
+            }
+        
+        div.planesCajas{
+            h2{
+            font-family:$fuenteTitulos;
+            font-size: 25px;
+            color: $colorSecundario;
+            margin-top: 10px;
+            text-align: center;
+            }
+            p.planesParrafos{
+            font-family:$fuenteParrafos;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+             }
+            img.planesImagenes{
+            width: 300px;
+            margin-top: 15px;
+            margin-left: 50px;
+            border-radius: 5px;
+            }
+            button{
+            @include tamaño(200px,40px);
+            margin-left: 25%;
+            border-radius: 7px;
+            } 
+        }
+   
+      
+}
+@media only screen and (max-width: 768px){
+            h1.tituloServicios{
+                margin-left: 100px;
+            }
+            article.servicios{
+             flex-direction: column;
+            margin-left: 100px;
+            }
+            div.planesCajas:hover{
+                display: none;
+            }
+    
+}  
+@media only screen and (max-width: 380px){
+    h1.tituloServicios{
+        margin-top: 50px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    article.servicios{
+     flex-direction: column;
+     margin-left: 50px;
+        div.planesCajas{
+                background-color: rgb(201, 201, 201);
+                @include tamaño(300px,550px);
+                margin-top: 20px;
+
+                h2{
+                    font-size: 18px;
+                    }
+                p.planesParrafos{
+                    font-size: 16px;
+                    }
+                img.planesImagenes{
+                    width: 300px;
+                    margin-left: 0px;
+                    }
+                button{
+                    margin-left: 18%;
+                } 
+        }
+    }   
+}
+ 

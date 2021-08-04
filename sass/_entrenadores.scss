@@ -1,0 +1,30 @@
+section{
+    h1.tituloEntrenadores{
+        margin-top:20px;
+        margin-left: 45%;
+        font-family: $fuenteTitulos;
+        font-size: 35px;
+    }  
+    article.carsEntrenadores{
+        margin-left: 60px;
+    }
+@media only screen and (max-width: 768px){
+    h1.tituloEntrenadores{
+        margin-left: 100px;
+    }
+    article.carsEntrenadores{
+            margin-left: 80px;
+        }
+}
+
+@media only screen and (max-width: 380px){
+    h1.tituloEntrenadores{
+        margin-top: 50px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    article.carsEntrenadores{
+        margin-left: 35px;
+    }
+}
+}
