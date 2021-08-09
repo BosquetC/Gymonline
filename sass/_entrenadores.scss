@@ -10,9 +10,15 @@ section{
         margin-bottom: 20px;
         div.imagenEntrenadores{
             box-shadow: -5px 5px 10px;
-            height: 420px;}
+            height: 450px;}
         div.cajasEntrenadores{
             background-color: $colorCajas;
+            h2.titulosCards{
+                font-family: $fuenteTitulos;
+                font-size: 22px;
+                color: $colorSecundario;
+                margin-top: 10px;
+            }
             p.entrenadores{ 
                 color: $colorSecundario;
                 font-family: $fuenteParrafos;
