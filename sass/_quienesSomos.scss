@@ -25,7 +25,7 @@ section{
         margin-left: 30px;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
 section{
     article.segundoArticulo{
         grid-template-columns:200%;
@@ -50,11 +50,11 @@ section{
     section{
         h1.tituloQuienesSomos{
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: 30px;
         }
         p.segundoParrafo{
         font-size: 16px;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-top: -20px;
         @include tamaño(300px,200px);
         }

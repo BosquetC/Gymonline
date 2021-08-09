@@ -38,7 +38,7 @@ section .segundoParrafo {
   margin-left: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section article.segundoArticulo {
     -ms-grid-columns: 200%;
         grid-template-columns: 200%;
@@ -58,11 +58,11 @@ section .segundoParrafo {
 @media only screen and (max-width: 420px) {
   section h1.tituloQuienesSomos {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   section p.segundoParrafo {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: -20px;
     width: 300px;
     height: 200px;
@@ -161,7 +161,7 @@ article.servicios div.planesCajas button:hover {
 @media only screen and (max-width: 420px) {
   h1.tituloServicios {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 20px;
   }
   article.servicios {
@@ -169,7 +169,7 @@ article.servicios div.planesCajas button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   article.servicios div.planesCajas {
     background-color: #c9c9c9;
@@ -178,10 +178,10 @@ article.servicios div.planesCajas button:hover {
     margin-top: 20px;
   }
   article.servicios div.planesCajas h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
   article.servicios div.planesCajas p.planesParrafos {
-    font-size: 16px;
+    font-size: 14px;
   }
   article.servicios div.planesCajas img.planesImagenes {
     width: 300px;
@@ -232,11 +232,11 @@ section article.carsEntrenadores div.cajasEntrenadores p.entrenadores {
 @media only screen and (max-width: 420px) {
   section h1.tituloEntrenadores {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 20px;
   }
   section article.carsEntrenadores {
-    margin-left: 3px;
+    margin-left: 30px;
   }
 }
 
@@ -313,10 +313,16 @@ section.contactos label {
     margin-top: 60px;
     margin-left: 110px;
   }
+  section.contactos form div {
+    margin-top: 10px;
+  }
   section.contactos h1.tituloContactanos {
     height: 50px;
     margin-top: 50px;
     margin-left: 100px;
+  }
+  section.contactos img.contactanos {
+    margin-left: 50px;
   }
 }
 
@@ -325,14 +331,14 @@ section.contactos label {
     height: 50px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   section.contactos form {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   section.contactos form button.botonDeFormulario {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   section.contactos img.contactanos {
     width: 200px;
@@ -341,7 +347,7 @@ section.contactos label {
     -ms-grid-column: 1;
     grid-area: imgC;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 }
 
@@ -527,19 +533,19 @@ section.contactos label {
   }
   * body section h1.tituloDeBienvenida {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   * body section p.primerParrafo {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: -20px;
     width: 300px;
     height: 200px;
   }
   * body section img.imagenPortada {
     width: 200px;
-    margin-left: 15px;
-    margin-top: 120px;
+    margin-left: 50px;
+    margin-top: 100px;
   }
   * body footer p {
     font-size: 12px;

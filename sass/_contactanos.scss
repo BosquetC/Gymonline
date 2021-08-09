@@ -46,12 +46,18 @@ section.contactos{
         form{
         margin-top: 60px;
         margin-left: 110px;
+        div{
+            margin-top: 10px;
+        }
        }
        h1.tituloContactanos{
         height: 50px;
         margin-top: 50px;
         margin-left: 100px;
 
+       }
+       img.contactanos{
+           margin-left: 50px;
        }
     }
 }
@@ -61,19 +67,19 @@ section.contactos{
         height: 50px;
         font-size: 20px;
         margin-top: 30px;
-        margin-left:10px;
+        margin-left:30px;
        }
        form{
         margin-top: 20px;
-        margin-left:10px;
+        margin-left:30px;
         button.botonDeFormulario{
-        margin-top: 25px;}
+        margin-top: 35px;}
        }
        img.contactanos{
         width: 200px;
         grid-area: imgC;
          margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 70px;
         }       
     }
 }

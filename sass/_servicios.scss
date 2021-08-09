@@ -74,22 +74,22 @@
 @media only screen and (max-width: 420px){
     h1.tituloServicios{
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: 30px;
         font-size: 20px;
     }
     article.servicios{
      flex-direction: column;
-     margin-left: 10px;
+     margin-left: 30px;
         div.planesCajas{
                 background-color: rgb(201, 201, 201);
                 @include tamaño(300px,550px);
                 margin-top: 20px;
 
                 h2{
-                    font-size: 18px;
+                    font-size: 16px;
                     }
                 p.planesParrafos{
-                    font-size: 16px;
+                    font-size: 14px;
                     }
                 img.planesImagenes{
                     width: 300px;
