@@ -1,5 +1,6 @@
 $colorPrimario: #CAF7E3;
 $colorSecundario:#053742;
+$colorCajas: rgb(201, 201, 201);
 $fuenteTitulos: 'Lato', sans-serif;
 $fuenteParrafos: 'Roboto', sans-serif;
 @mixin tamaño ($width, $heigth) {
@@ -101,7 +102,7 @@ footer{
         text-align: center;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     header{
             button.menuHamburguesa{
             display: inline-block;

@@ -6,9 +6,20 @@ section{
         font-size: 35px;
     }  
     article.carsEntrenadores{
-        margin-left: 60px;
+        margin-left: 80px;
+        div.imagenEntrenadores{
+            box-shadow: -5px 5px 10px;
+            height: 420px;}
+        div.cajasEntrenadores{
+            background-color: $colorCajas;
+            p.entrenadores{ 
+                color: $colorSecundario;
+                font-family: $fuenteParrafos;
+                font-size: 15px;
+            }
+        }
     }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     h1.tituloEntrenadores{
         margin-left: 100px;
     }

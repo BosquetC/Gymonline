@@ -12,10 +12,10 @@
     justify-content: space-evenly;
 
         div.planesCajas{
-        background-color: rgb(201, 201, 201);
-        @include tamaño(400px,500px);
+        background-color: $colorCajas;
+        @include tamaño(350px,550px);
         margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         border-radius: 5px;
         box-shadow: -5px 5px 10px;
         }
@@ -26,34 +26,39 @@
         div.planesCajas{
             h2{
             font-family:$fuenteTitulos;
-            font-size: 25px;
+            font-size: 22px;
             color: $colorSecundario;
             margin-top: 10px;
             text-align: center;
             }
             p.planesParrafos{
             font-family:$fuenteParrafos;
+            font-size: 15px;
             text-align: center;
             margin-top: 20px;
             margin-left: 20px;
             margin-right: 20px;
              }
             img.planesImagenes{
-            width: 300px;
+            width: 100%;
             margin-top: 15px;
-            margin-left: 50px;
-            border-radius: 5px;
             }
             button{
             @include tamaño(200px,40px);
-            margin-left: 25%;
+            margin-left: 22%;
+            margin-top: 15px;
             border-radius: 7px;
+            background-color: $colorPrimario;
             } 
+            button:hover{
+                background-color: $colorSecundario;
+                color: whitesmoke;
+            }
         }
    
       
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
             h1.tituloServicios{
                 margin-left: 100px;
             }
