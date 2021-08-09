@@ -304,6 +304,11 @@ section.contactos form button.botonDeFormulario {
   border-radius: 5px;
 }
 
+section.contactos form .botonDeFormulario:hover {
+  background-color: #053742;
+  color: whitesmoke;
+}
+
 section.contactos label {
   display: block;
 }
@@ -418,10 +423,6 @@ section.contactos label {
 }
 
 * body header nav li a:hover {
-  color: purple;
-}
-
-* body header nav li a:active {
   color: whitesmoke;
 }
 
@@ -487,6 +488,10 @@ section.contactos label {
   margin-left: 10px;
   font-size: 30px;
   color: #053742;
+}
+
+* body footer .redes > a:hover {
+  color: whitesmoke;
 }
 
 * body footer p {

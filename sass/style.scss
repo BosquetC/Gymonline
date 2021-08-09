@@ -45,14 +45,11 @@ body{
                 font-size: 11px;
                 }
                 a:hover{
-                color: purple
-                }
-                a:active{
-                color: whitesmoke ;
+                color: whitesmoke
                 }
            }   }
     }
-section{
+section{ 
     h1{color: $colorSecundario;
     font-family:'Lato', sans-serif;
     font-size: 35px; 
@@ -95,6 +92,9 @@ footer{
         margin-left: 10px;
         font-size: 30px;
         color: $colorSecundario ;
+    }
+    .redes>a:hover{
+        color: whitesmoke;
     }
     p{
         color: $colorSecundario ;

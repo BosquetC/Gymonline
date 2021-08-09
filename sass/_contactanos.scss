@@ -32,6 +32,10 @@ section.contactos{
                   color: $colorSecundario;
                   border-radius: 5px;
               }
+              .botonDeFormulario:hover{
+                  background-color: $colorSecundario;
+                  color: whitesmoke;
+              }
         }       
         label{
         display: block;
